@@ -1,0 +1,25 @@
+const express = require('express');
+const routes = require('./Develop/routes');
+// import sequelize connection
+
+const app = express();
+const PORT = process.env.PORT || 3001;
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.use(routes);
+
+// sync sequelize models to the database, then turn on the server
+app.listen(PORT, () => {
+  console.log(`App listening on port ${PORT}!`);
+});
+
+//Create env file (done)
+//Connect to database (done)
+//schema (done)
+//seeds (handle errors)
+// category routes ()
+// product routes ()
+// tag routes ()
+// index.js ()
