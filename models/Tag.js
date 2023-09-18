@@ -6,7 +6,7 @@ class Tag extends Model {}
 
 Tag.init(
   {
-    product_name: {
+    tag_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },

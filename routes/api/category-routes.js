@@ -37,7 +37,6 @@ res.status(500).json(err);
 router.post('/api/categories', async (req, res) => {
   try { 
       const categoriesData = await Category.create({
-      product_name: req.body.product_name,
       category_name:req.body.category_name,
 
     });
