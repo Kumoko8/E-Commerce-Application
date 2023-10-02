@@ -58,7 +58,6 @@ router.put('/:id', async (req, res) => {
     try {
       const categoriesData = await Category.update(
       {
-        product_name: req.body.product_name,
         category_name: req.body.category_name,
       },
       {
