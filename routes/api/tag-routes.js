@@ -69,7 +69,7 @@ if (!tagData[0]) {
 //DELETE a tag by id
 router.delete('/:id', async (req, res) => {
   try {
-    const tagData = await ProductTag.destroy({
+    const tagData = await Tag.destroy({
       where: {
         id: req.params.id,
       },
