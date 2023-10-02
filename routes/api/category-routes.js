@@ -41,7 +41,7 @@ res.status(500).json(err);
 });
 
 //POST a category
-router.post('/api/categories', async (req, res) => {
+router.post('/', async (req, res) => {
   try { 
       const categoriesData = await Category.create({
       category_name:req.body.category_name,
@@ -54,7 +54,7 @@ router.post('/api/categories', async (req, res) => {
   });
 
 //UPDATE a category by id
-router.put('/api/categories/:id', async (req, res) => {
+router.put('/:id', async (req, res) => {
     try {
       const categoriesData = await Category.update(
       {
