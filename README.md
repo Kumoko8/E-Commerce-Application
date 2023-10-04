@@ -4,7 +4,7 @@
   ## Description
 
  
-     This project is designed to create the back-end of an application using sequelize to allow users to interact with a SQL database more efficiently and effectively. I learned a lot about how sequelize methods make queries much  easier. I also got practice building routes and connecting the back-end server with the front end html.
+     This project is designed to create the back-end of an application using sequelize to allow users to interact with a SQL database more efficiently and effectively. I learned a lot about how sequelize methods make queries much  easier. I also got practice building routes and connecting the back-end server with the front end html. The biggest thing I learned about routes is bundling them with the api folder and connecting the bundle with index.js. The routes in my api folder are being found in an api bundle directed by my routes/index.js, therefore I don't need to retype /api for each route in my api folder.
 
 
    ## Table of Contents
